@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects and the underline */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    display: inline-block; /* Allows for transform effects */
+    padding-bottom: 5px; /* Space for the underline */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold color on hover for contrast */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    border-bottom: 2px solid white; /* White underline on hover */
+}
+
+.menu-icon:hover {
+    transform: translateY( 10px);
+}
+
+.logo:hover {
+    transform: translateY( 10px);
+}
+
+body{
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background-image: url(images/menu.jpg); /* Add your image URL here */
+    background-size: cover; /* Ensure your image covers the whole page */
+    background-repeat: no-repeat; /* Avoid image tiling */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fix the position of background image */
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+  .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .heading h4 {
+    text-transform: uppercase;
+    font-size: 36px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+  }
+  .heading h4:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: teal;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .single-menu {
+    text-align: center;
+    flex-basis: 32%;
+  }
+  .single-menu h2 {
+	background-color: tomato;
+	color: #fff;
+	padding: 10px;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+  
+  .menu-box {
+	transition: .3s;
+	border: 2px solid #f4f4f4;
+	padding: 20px 0;
+	margin: 20px 0;
+    border-bottom: 3px solid #ddd;
+}
+  .menu-box img {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 3px;
+  }
+  .menu-box h4 {
+	text-transform: capitalize;
+	border-bottom: 1px dashed #ddd;
+	padding: 10px 0;
+	margin: 10px 0;
+	font-size: 22px;
+	border-top: 1px dashed #ddd;
+}
+  
+.menu-box {
+    transition: .3s;
+  }
+  .menu-box img {
+    transition: .3s;
+  }
+  .menu-box:hover img {
+    border-radius: 0;
+  }
+  .menu-box h4 span {
+	color: tomato;
+	font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+    .container{
+        width: 400px;
+    }
+    .single-menu{
+        flex-basis: 100%;
+    }
+}

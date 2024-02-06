@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character encoding -->
+    <meta charset="utf-8">
+    
+    <!-- Compatibility with Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Setting the viewport for responsiveness -->
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- Website icon -->
+    <link rel="icon" href="images/noodles.png" type="image/x-icon">
+    
+    <!-- Page title -->
+    <title>Reservations</title>
+    
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    
+    <!-- Another link for website icon (Seems redundant, consider removing one) -->
+    <link rel="icon" href="images/noodles.png" type="image/x-icon">
+    
+    <!-- Font Awesome kit for icons -->
+    <script src="https://kit.fontawesome.com/989e7a0b67.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Hero section -->
+    <div class="hero">
+        <!-- Logo linking back to homepage -->
+        <a href="index.html">
+            <img src="images/logo.png" class="logo" alt="logo">
+        </a>
+        
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- Menu page link -->
+                <li><a href="menu.html">MENU</a></li>
+                
+                <!-- Reservations page link -->
+                <li><a href="form.html">RESERVATIONS</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Menu icon linking to menu page -->
+        <a href="menu.html">
+            <img src="images/menu.png" class="menu-icon" alt="icon">
+        </a>
+        
+        <!-- Reservation form -->
+        <form>
+            <div class="row">
+                <!-- Input group for name -->
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                </div>
+                
+                <!-- Input group for phone number -->
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="fas fa-phone-square-alt"></i>Phone No.</label>
+                </div>
+            </div>
+            
+            <!-- Input group for email address -->
+            <div class="input-group">
+                <input type="text" id="email" required>
+                <label for="email"><i class="fas fa-envelope"></i>Email Address</label>
+            </div>
+            
+            <!-- Input group for customer's message -->
+            <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message"><i class="fas fa-comments"></i>Please write down how we can accommodate you!</label>
+            </div>
+            
+            <!-- Submit button -->
+            <button type="submit">SUBMIT <i class="fas fa-paper-plane"></i></button>
+        </form> 
+    </div>
+</body>
+
+</html>

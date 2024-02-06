@@ -1,0 +1,287 @@
+/* Resetting default margins, paddings and setting a default font family */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Main container styling with a background image */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/phohome.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+/* Navbar styling with a flex display */
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo styling and interaction */
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+/* Menu icon styling */
+.menu-icon {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+/* Navigation menu styling */
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+/* Navigation list styling */
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects and the underline */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    display: inline-block; /* Allows for transform effects */
+    padding-bottom: 5px; /* Space for the underline */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold color on hover for contrast */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    border-bottom: 2px solid white; /* White underline on hover */
+}
+
+.row {
+
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+
+p {
+    color: #fff;
+    font-size: 14px;          /* Increased font size for better legibility */
+    line-height: 22px;        /* Adjusted line-height for improved spacing */
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);  /* Subtle text shadow for a soft glow effect */
+    padding: 5px 0;           /* Padding for spacing around the text */
+    font-weight: 300;         /* Lighter font-weight for a more elegant look */
+    letter-spacing: 0.5px;    /* Slight letter-spacing to make it more breathable */
+    word-spacing: 1px;        /* Space between words for better readability */
+    font-family: 'Roboto', sans-serif;  /* Assuming you're using Roboto as the main font */
+    text-align: justify;      /* Text alignment to distribute words evenly */
+}
+
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 2px solid #000; /* Added border for depth and distinction */
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer; /* Hand cursor to indicate it's clickable */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-transform: uppercase; /* Making text uppercase for emphasis */
+    font-weight: bold; /* Making text bold for readability */
+    letter-spacing: 1px; /* Adding some spacing between characters for better visual appeal */
+    position: relative; /* Setting the stage for possible pseudo-elements */
+    overflow: hidden; /* In case we add any pseudo-elements or effects that shouldn't spill out */
+}
+
+button:hover {
+    background: #000; /* On hover, invert the colors */
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Increase the shadow a bit on hover for depth */
+    transform: translateY(-2px); /* Button lifts up slightly on hover */
+}
+
+button:active {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Pressed down effect */
+    transform: translateY(1px); /* Button presses down slightly when clicked */
+}
+
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+
+/* Individual card styling */
+.card {
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+
+/* Specific cards with different images */
+.card1 {
+    background-image: url(images/phohand.jpg); 
+}
+
+.card2 {
+    background-image: url(images/banh.jpg); 
+}
+
+.card3 {
+    background-image: url(images/spring.jpg); 
+}
+
+.card4 {
+    background-image: url(images/canh.jpg); 
+}
+
+
+/* Hover effects for cards, menu icons, and logos */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.menu-icon:hover {
+    transform: translateY( 10px);
+}
+
+.logo:hover {
+    transform: translateY( 10px);
+}
+
+/* Styling for h5 headers and card paragraphs */
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 375px) {
+    h1 {
+        font-size: 36px;  /* Adjusted font size for smaller screens */
+    }
+    
+    .navbar {
+        height: 18%;  /* Increased height to avoid cramping */
+        flex-direction: column;  /* Stacking elements */
+        align-items: flex-start;  /* Aligning to the start */
+        padding-left: 15px;  /* Added padding */
+    }
+
+    .logo {
+        width: 40px;  /* Reduced logo size */
+        margin-bottom: 10px;  /* Added space between logo and menu icon */
+    }
+
+    .menu-icon {
+        width: 30px;  /* Slightly reduced size */
+        margin-left: 0;  /* Removed left margin */
+    }
+
+    nav {
+        width: 100%;  /* Ensuring it takes full width */
+        text-align: left;  /* Aligning text to the left */
+    }
+
+    nav ul li {
+        margin-left: 20px;  /* Reduced space between menu items */
+    }
+    
+    button {
+        width: 120px;  /* Reduced button width */
+        padding: 8px 0;  /* Reduced padding */
+        font-size: 10px;  /* Slightly reduced font size */
+    }
+
+    p {
+        font-size: 9px;  /* Reduced font size */
+        line-height: 12px;  /* Adjusted line height */
+    }
+
+    .container {
+        padding-left: 5%;  /* Reduced padding */
+        padding-right: 5%;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;  /* Single column for cards */
+        gap: 10px;  /* Adjusted gap */
+    }
+
+    .card {
+        width: calc(100% - 30px);  /* Adjusted width for padding */
+        height: 180px;  /* Adjusted height */
+        padding: 10px;  /* Reduced padding */
+    }
+}
+
+
+/* Tablet Styles */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    nav ul li {
+        margin-left: 40px;
+    }
+
+    button {
+        width: 160px;
+        font-size: 11px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 769px) {
+    /* Your existing CSS remains here for large screens */
+}
+
+
